@@ -1,0 +1,61 @@
+# ==============================
+# Framework API
+# ==============================
+
+fastapi
+uvicorn[standard]
+
+
+# ==============================
+# Base de données PostgreSQL
+# ==============================
+
+sqlalchemy
+psycopg2-binary
+alembic
+
+
+# ==============================
+# Validation des données API
+# ==============================
+
+pydantic
+pydantic-settings
+
+
+# ==============================
+# Variables d'environnement
+# ==============================
+
+python-dotenv
+
+
+# ==============================
+# Authentification
+# ==============================
+
+python-jose[cryptography]
+passlib[bcrypt]
+
+
+# ==============================
+# Calcul scientifique
+# ==============================
+
+numpy
+scipy
+
+
+# ==============================
+# Tests
+# ==============================
+
+pytest
+httpx
+
+
+# ==============================
+# Documentation / outils développement
+# ==============================
+
+python-multipart
