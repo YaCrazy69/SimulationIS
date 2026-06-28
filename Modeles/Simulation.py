@@ -13,7 +13,7 @@ class Simulation(Base):
     Utilisateur_id = Column(Integer, ForeignKey("utilisateur.id_User"))
     Utilisateur = relationship("Utilisateur", back_populates="Simulation")
     PointSim = relationship("PointSim", back_populates="Simulation")
-    ResultatSim = relationship("ResultatSim", back_populates="Simulation")
+    ResultatSim = relationship("ResultatSim", back_populates="Simulation", uselist=False)
 
 
 from Modeles.PointSim import PointSim  # noqa: F401, E402

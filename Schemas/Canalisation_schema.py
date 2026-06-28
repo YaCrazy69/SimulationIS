@@ -8,3 +8,5 @@ class Create_Canalisation(BaseModel):
 
     Longueur_Canal: Decimal
     Debit_max: Decimal
+    Reservoir_id: int
+    Quartier_id: int

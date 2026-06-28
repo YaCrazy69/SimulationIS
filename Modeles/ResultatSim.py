@@ -9,7 +9,7 @@ class ResultatSim(Base):
     Volume_Final = Column(Numeric, nullable=False)
     Quartier_alimentes = Column(String(50), nullable=False)
     Quartiers_penurie = Column(String(50), nullable=False)
-    Simulation_id = Column(Integer, ForeignKey('simulation.Id_sim'))
+    Simulation_id = Column(Integer, ForeignKey('simulation.Id_sim'), unique=True)
     Simulation = relationship("Simulation", back_populates="ResultatSim")
 
 

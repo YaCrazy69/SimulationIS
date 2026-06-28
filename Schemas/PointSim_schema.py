@@ -10,3 +10,12 @@ class Create_PointSim(BaseModel):
     Temps_Sim: timedelta
     Nv_eau: Decimal
     Volume: Decimal
+
+
+class PointSimResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    Id_Pt: int
+    Temps_Sim: float
+    Nv_eau: Decimal
+    Volume: Decimal

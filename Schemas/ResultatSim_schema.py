@@ -9,3 +9,11 @@ class Create_ResultatSim(BaseModel):
     Volume_Final: Decimal
     Quartier_alimentes: str
     Quartiers_penurie: str
+
+
+class ResultatSimResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    Volume_Final: Decimal
+    Quartier_alimentes: str
+    Quartiers_penurie: str
